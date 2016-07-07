@@ -1,0 +1,11 @@
+LIBNAME save "Data-PosttestNesting-13";
+DATA save.Settings;
+     fractional =  0 ;
+     d =  0.3 ;
+     n =  400 ;
+     clustersize =  5 ;
+     icc =  0.1 ;
+     nsims =  5000 ;
+     dropoutrate = .2;
+RUN;
+%INCLUDE "DoTheWork-Posttest-Complete.sas";
